@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+  <div id="game-container">
+    <div id="scoreboard">
+      <div>
+        <span id="player1-name">Player 1</span>:
+        <span id="player1-score">0</span>
+      </div>
+      <div>
+        <span id="player2-name">Player 2</span>:
+        <span id="player2-score">0</span>
+      </div>
+    </div>
+    <div id="board">
+      <div class="cell" onclick="makeMove(0)"></div>
+      <div class="cell" onclick="makeMove(1)"></div>
+      <div class="cell" onclick="makeMove(2)"></div>
+      <div class="cell" onclick="makeMove(3)"></div>
+      <div class="cell" onclick="makeMove(4)"></div>
+      <div class="cell" onclick="makeMove(5)"></div>
+      <div class="cell" onclick="makeMove(6)"></div>
+      <div class="cell" onclick="makeMove(7)"></div>
+      <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <div id="game-mode">
+      <label for="mode">Game Mode:</label>
+      <select id="mode">
+        <option value="2-player">2 Player</option>
+        <option value="single-player">Single Player</option>
+      </select>
+      <label for="score">Race to:</label>
+      <select id="score">
+        <option value="5">5</option>
+        <option value="10">10</option>
+      </select>
+      <button onclick="resetGame()">Reset Game</button>
+    </div>
+  </div>
+ 
+    <script src="TicTacToe.js"></script>
+</body>
+</html>
